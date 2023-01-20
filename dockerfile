@@ -1,9 +1,9 @@
-FROM python:3.10.9-slim-buster
+FROM python:3.10.1-slim-buster
 
 
 # WORKDIR /home/app
 # COPY requirements.txt requirements.txt
-RUN pip3 install flask pypdf2 SpeechRecognition PdfReader pyttsx3   comtypes
+RUN pip install flask pypdf2 SpeechRecognition PdfReader pyttsx3   comtypes
 
 COPY . .
 # # Run cd app && python test.py
